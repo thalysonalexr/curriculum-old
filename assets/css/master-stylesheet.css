@@ -3,78 +3,64 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 
 *{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-weight: lighter;
-	font-family: 'Noto Sans', sans-serif!important;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: lighter;
+  font-family: 'Noto Sans', sans-serif!important;
 }
 
-section{
-	padding: 2%;
-}
+section{ padding: 2%; }
 
-section h2{
-	margin-bottom: 5%;
-}
+section h2{ margin-bottom: 5%; }
 
 #interface{
-	padding: 3%;
-	width: 1024px;
-	margin: auto;
+  padding: 3%;
+  width: 1024px;
+  margin: auto;
 }
 
-#topics{
-	margin-top: 2%;
-}
+#topics{ margin-top: 2%; }
 
 #topics li a{
-	color: #fff;
-	margin-left: 2%;
+  color: #fff;
+  margin-left: 2%;
 }
 
-#topics li i{
-	color: #fff;
-}
+#topics li i{color: #fff; }
 
 h1#title{
-	margin-bottom: 5%;
-	text-align: center;
+  margin-bottom: 5%;
+  text-align: center;
 }
 
 figure#perfil{
-	margin: auto;
-	width: 250px;
+  margin: auto;
+  width: 250px;
 }
 
 img#perfil{
-	width: 250;
-	height: 250px;
-	margin-right: 2%;
-	margin-bottom: 2%;
-	border-radius: 250px;
-	border-radius: 250px!important;
-	margin: 0 auto!important;
+  width: 250;
+  height: 250px;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  border-radius: 250px;
+  border-radius: 250px!important;
+  margin: 0 auto!important;
 }
 
-#social-network a i{
-	margin-right: 15%;
-}
+#social-network a i{ margin-right: 15%; }
 
-#copyright{
-	color: #fff;
-}
+#copyright{ color: #fff; }
 
 #f-social-network{
-	margin-top: 2%;
-	margin-bottom: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 #f-social-network a i{
-	margin-right: 3%;
-	margin-left: 3%;
+  margin-right: 3%;
+  margin-left: 3%;
 }
 
-#f-social-network a:hover i{
-	color: #fff;
-}
+#f-social-network a:hover i{ color: #fff; }
