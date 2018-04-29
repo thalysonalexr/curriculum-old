@@ -57,6 +57,8 @@ h2 {
 
 p{ text-align: justify; }
 
+#nav, #footer{ width: 100%; }
+
 /* navbar */
 
 .background-img{
