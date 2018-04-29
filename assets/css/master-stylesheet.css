@@ -1,14 +1,99 @@
 // Folha de estilos geral da página
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+/* definições */
 
-*{
+@charset 'UTF-8';
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans'), local('NotoSans'), url(https://fonts.gstatic.com/s/notosans/v7/o-0IIpQlx3QUlC5A4PNr5TRA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6Mk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Bree Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bree Serif Regular'), local('BreeSerif-Regular'), url(https://fonts.gstatic.com/s/breeserif/v7/4UaHrEJCrhhnVA3DgluA96rp5w.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Catamaran Regular'), local('Catamaran-Regular'), url(https://fonts.gstatic.com/s/catamaran/v4/o-0IIpQoyXQa2RxT7-5r5TRA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* resets */
+
+*:not(i){
   margin: 0;
   padding: 0;
   border: 0;
   font-weight: lighter;
   font-family: 'Noto Sans', sans-serif!important;
 }
+
+strong{ font-weight: 600!important; }
+
+h2 {
+  font-weight: 600;
+  font-family: 'Bree Serif', serif!important;
+}
+
+p{ text-align: justify; }
+
+/* navbar */
+
+.background-img{
+  background: url('../images/background-menu1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-blend-mode: multiply;
+  min-height: 100%;
+  min-width: 100%;
+  height: 100%;
+  transition: background-image 500ms ease-in-out;
+}
+
+/* biografia */
+
+#biografia h2{
+  margin-bottom: 3%;
+  font-style: italic;
+}
+
+#biografia p{
+  padding: 2%;
+  font-style: italic;
+  border: 1px solid #dbdbdb;
+  border-radius: 7px;
+}
+
+/* dados e informações */
+
+td, p{
+  font-family: 'Catamaran', sans-serif!important;
+  line-height: 1.6em;
+  font-size: 1.1em;
+}
+
+/* sessões */
 
 section{ padding: 2%; }
 
@@ -20,6 +105,8 @@ section h2{ margin-bottom: 5%; }
   margin: auto;
 }
 
+/* tópicos */
+
 #topics{ margin-top: 2%; }
 
 #topics li a{
@@ -29,14 +116,25 @@ section h2{ margin-bottom: 5%; }
 
 #topics li i{color: #fff; }
 
+/* titulo */
+
 h1#title{
+  font-size: 3em;
   margin-bottom: 5%;
   text-align: center;
+  font-family: 'Pacifico', cursive!important;
 }
+
+/* foto de perfil */
 
 figure#perfil{
   margin: auto;
   width: 250px;
+  transition: 300ms ease;
+}
+
+figure#perfil:hover{
+  transform: scale(1.1, 1.1);
 }
 
 img#perfil{
@@ -49,9 +147,29 @@ img#perfil{
   margin: 0 auto!important;
 }
 
-#social-network a i{ margin-right: 15%; }
+/* redes sociais */
+
+#social-network a i{
+  margin-right: 15%;
+  transition: 1000ms ease;
+}
+
+#social-network a i:hover{
+  transform: rotate(360deg);
+}
+
+.twitter{ color: #1da1f2!important; }
+.github{ color: #24292e!important; }
+.linkedin{ color: #0077B5!important; }
+.facebook{ color: #4267b2!important; }
+
+/* footer */
+
+footer p{ text-align: center; }
 
 #copyright{ color: #fff; }
+
+/* redes socias no footer */
 
 #f-social-network{
   margin-top: 2%;
@@ -63,4 +181,6 @@ img#perfil{
   margin-left: 3%;
 }
 
-#f-social-network a:hover i{ color: #fff; }
+#f-social-network a i:hover{
+  color: #fff;
+}

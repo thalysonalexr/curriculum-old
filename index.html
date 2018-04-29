@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>Currículo</title>
+    <title>Meu Currículo - Thalyson Alexandre Rodrigues de Sousa</title>
     <meta charset="utf-8">
     <!-- Metadados -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,12 +20,13 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/toggle.js"></script>
     <script src="assets/js/navtopics.js"></script>
+    <script src="assets/js/transition-img.js"></script>
   </head>
   <body>
 
     <div class="pos-f-t">
       <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
+        <div class="bg-dark p-4 background-img">
           <h4 class="text-white">Navegue entre tópicos :)</h4>
           <span class="text-muted">Deseja ver mais? <strong>contate-me</strong></span>
           <ul id="topics" class="nav navbar-nav">
@@ -55,6 +56,32 @@
       <figure id="perfil">
         <img id="perfil" src="assets/images/perfil.jpg" alt="Thalyson Alexandre Rodrigues de Sousa" class="img-thumbnail rounded d-block">
       </figure>
+
+      <article id="biografia" class="container">
+        <h2>Biografia</h2>
+        <p>
+          "Web developer backend em PHP e frontend com JavaScript, HTML5 e CSS3. Amante dos frameworks <a target="_blank" href="https://vuejs.org/">VueJs</a>, <a target="_blank" href="https://docs.zendframework.com/zend-expressive/">Zend Expressive</a> e <a target="_blanks" href="https://github.com/Respect">Respect</a>. Fascinado por arquiteturas de Software como MVC e REST. Tem como "chodó" o paradigma de orientação a objetos mas curioso em funcional. Pesquisador de conceitos para API's RESTful, middlewares, design patterns para PHP e Json Web Token's. Estudante de Sistemas de Informação (6º semestre) pela Universidade Federal de Mato Grosso Campus Universitário de Rondonópolis, 21 anos e a procura da primeira oportunidade para por as <em>mãos na massa</em>."
+        </p>
+      </article>
+
+      <section id="projetos">
+        <h2>Projetos</h2>
+        <ul>
+          <li><a href="https://github.com/thalysonrodrigues/cadtreesa">Website Cadtreesa</a></li>
+          <li><a href="https://github.com/thalysonrodrigues/API-RESTful-cadtreesa">API Cadtreesa Project</a></li>
+          <li><a href="https://github.com/thalysonrodrigues/curriculum">Currículo</a></li>
+          <li><a href="https://github.com/thalysonrodrigues/vue-region-br">Region BR Client</a></li>
+          <li><a href="https://github.com/thalysonrodrigues/API-region-br">API Region BR</a></li>
+          <li><a href="https://github.com/thalysonrodrigues/cadtreesa-client">Cadtreesa Client</a></li>
+          <li><a href="https://github.com/thalysonrodrigues/encryption">Encryption</a></li>
+          <li><a href="https://github.com/thalysonrodrigues/photospace">Photospace</a></li>
+          <li><a href="https://github.com/thalysonrodrigues/extract-sort">Extract Sort</a></li>
+          <li><a href="https://github.com/thalysonrodrigues/qrcode-urls">QRCode de URL's</a></li>
+          <li><a href="https://github.com/thalysonrodrigues/calcmath">Calcmath</a></li>
+          <li><a href="https://github.com/thalysonrodrigues/tic-tac-toe">Jogo da Velha (Tic-Tac-Toe)</a></li>
+          <li><a href="https://github.com/thalysonrodrigues/data-structures">Estrutura de Dados com Python</a></li>
+        </ul>
+      </section>
 
       <section id="dados-pessoais" class="container">
         <h2>Dados Pessoais</h2>
@@ -124,10 +151,10 @@
               <td>Redes sociais</td>
               <td>
                 <div id="social-network" class="container">
-                <a target="_blank" href="https://www.facebook.com/profile.php?id=100008261989200" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
-                <a target="_blank" href="https://github.com/thalysonrodrigues" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                <a target="_blank" href="https://twitter.com/thalyson_rodss" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-                <a target="_blank" href="https://www.linkedin.com/in/thalyson-alexandre-rodrigues-de-sousa-46a99114a/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                <a target="_blank" class="facebook" href="https://www.facebook.com/profile.php?id=100008261989200" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a target="_blank" class="github" href="https://github.com/thalysonrodrigues" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                <a target="_blank" class="twitter" href="https://twitter.com/thalyson_rodss" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/thalyson-alexandre-rodrigues-de-sousa-46a99114a/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
                 </div>
               </td>
             </tr>
